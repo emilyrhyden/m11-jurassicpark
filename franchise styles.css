@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: 'Proxima Nova', Arial, sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
   color: var(--body-text-color);
   background-color: var(--background-color);
 }
