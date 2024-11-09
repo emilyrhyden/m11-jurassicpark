@@ -26,9 +26,8 @@ header {
 }
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Proxima Nova';
     font-size: 12px;
-    font-weight: 100;
     color: var(--black);
 }
 
@@ -36,7 +35,7 @@ header, footer {
     text-align: center;
     padding: 1em;
     background-color: var(--white)
-    font-family: 'Montserrat';
+    font-family: 'Proxima Nova';
     color: var(--white)
 }
 
@@ -58,6 +57,7 @@ header, footer {
     text-transform: uppercase;
     color: var(--danger-color);
     margin-bottom: 50px;
+    font-weight: bold;
 } 
 
 .img_dino__card {
@@ -65,15 +65,24 @@ header, footer {
 }
 
 .ingen-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 100px;
-    margin: 150px 200px;
-    grid-column-start: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
 }
 
 .ingen-item1 {
-  margin-right: 50px;  
+    margin-right: 10px; 
+    justify-content: flex-start;
+    width: 250px;
+}
+
+.ingen-item-2 {
+    margin-right: 10px;
+    justify-content: flex-start;
+    width: 600px;
+    margin-left: 70px;
 }
 
 p.ingen-text, p.henry-wu {
@@ -95,6 +104,7 @@ p.henry-wu {
     margin-left: 0px;
     overflow: auto;
     display: block;
+    margin-bottom: 100px;
 }
 
 p.intro {
@@ -126,11 +136,13 @@ p.intro {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    display: flex;
+
 }
 
-nav ul li {
+nav li {
     display: inline;
     margin-right: 10px;
 }
@@ -139,12 +151,14 @@ nav ul li {
     display: flex;
     max-width: 1100px;
     margin: auto;
-    color: var(--danger-color)
+    color: var(--danger-color);
+    align-items: center;
+    font-weight: bold;
 }
 
 nav a {
     color: var(--black)
-    font-family: 'Montserrat';
+    font-family: 'Proxima Nova';
 }
 
 .logo_image__link {
@@ -191,16 +205,37 @@ main {
     margin-top: 100px;
 }
 
+.henry-wu {
+list-style: none;
+}
+
+.ingen-text, .henry-wu-text {
+    text-align: left;
+    padding: 20px;
+    }
+
 
 /* For cell phones and tablets below */
 @media  and {max-width: 1100px) {
-    .dino_card {
-        transform: scale: 80%;;
+    img_dino__card {
+        margin: 20px;
+    }
 
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: none;
+    }
+
+    nav > a.nav__logo {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
     .nav__link, .nav__link--active {
         text-decoration: underline;
+        color: #ff7a8f;
     }
 
     .nav__link--active {
@@ -208,9 +243,46 @@ main {
     }
 
     .ingen-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .ingen-logo-text-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+@media (min-width: 1100px) {
+    .ingen-logo-text-container {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .ingen-item1 {
+        display: none;
+        margin: 0;
+    }
+
+    .ingen-item2 {
+        display: none;
+        margin: 0;
+    }
+
+    main > .henry-wu-img {
+        margin: 50px;
+    }
+        
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        float: right;
+        font-size: 1.5em;
+    }
+
     
 }
