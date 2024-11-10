@@ -140,7 +140,10 @@
   margin-bottom: 20px;
   text-align: center;
 }
-
+.section__overview-content img {
+  height: auto;
+  width: 300px;
+}
 /* Grids */
 .grid--movies, .grid--spinoffs, .grid--media {
   display: flex;
@@ -156,8 +159,10 @@
 
 .grid__item-image--movie, .grid__item-image--spinoff, .grid__item-image--media {
   width: 100%;
+  height: auto;
   border-radius: 5px;
 }
+
 
 /* Typography */
 .typography__title-main {
