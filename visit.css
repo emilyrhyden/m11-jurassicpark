@@ -68,6 +68,11 @@ h3{
     color: var(--header3-color);
 }
 
+p {
+  font-family: 'Proxima Nova', sans-serif;
+  padding: 10px;
+}
+
 /* HERO */
 
 .hero {
@@ -89,7 +94,8 @@ h3{
   
   .button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 20px;
+    margin: auto;
     background-color: var(--button-bg-color); 
     color: var(--button-text-color);           
     border-radius: 5px;
