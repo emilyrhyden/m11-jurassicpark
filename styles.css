@@ -1,30 +1,100 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
+    color: #000000;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+
+}
+main {
+    padding-bottom: 60px;
 }
 
-header, footer {
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    padding: 1em;
-    background-color: black;
-    color: white;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #33cc00;
+    font-weight: 800; 
+}
+
+h2 {
+    font-family: 'Proxima Nova Extrabold', sans-serif; 
+    font-size: 45px; 
+    color: #ffbe00; 
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    background-color: #222;
+    text-align: center;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
 }
 
-nav a {
-    color: black;
+nav ul li a {
+    font-size: 14px;
+    font-weight: 800; /* Extrabold */
+    color: #ff7a8f; /* Inline link color */
     text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
 }
 
-main {
+main section {
     padding: 20px;
     text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px; /* Slightly larger padding for better touch target size */
+    margin: 20px 0; /* More space around the button for clarity */
+    background-color: #ff7a8f; /* The specified inline link color */
+    color: white; /* Contrast color for readability */
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Proxima Nova Extrabold', sans-serif; /* Maintaining font consistency */
+    font-size: 14px; /* Same as inline link size */
+    border: none; /* No border unless desired */
+    border-radius: 4px; /* Soften the edges slightly */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Cursor indicates clickable item */
+}
+
+.button:hover, .button:focus {
+    background-color: #e06676; /* A darker shade for hover */
+    transform: scale(1.05); /* Slightly enlarge on hover/focus for effect */
+    color: #ffffff; /* Ensures text color remains the same */
+    outline: none; /* Removes outline unless accessibility concerns dictate otherwise */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
 }

@@ -1,0 +1,288 @@
+:root {
+    --primary-color: #33cc00;
+    --text-color: #000000;
+    --text-color-lighter: #fff8e9;
+    --secondary-color: #ffbe00;
+    --link-color: #ff7a8f;
+    --danger-color: #39002d;
+    --white: #FFFFFF;
+}
+
+h1 {
+    font-size: 50px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 45px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+header {
+    display: block;
+    background-color: var(--text-color-lighter);
+}
+
+body {
+    font-family: 'Proxima Nova';
+    font-size: 12px;
+    color: var(--black);
+}
+
+header, footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--white)
+    font-family: 'Proxima Nova';
+    color: var(--white)
+}
+
+.img_dino__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.dino_name {
+  /*   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--danger-color);
+    margin-bottom: 50px;
+    font-weight: bold;
+} 
+
+.img_dino__card {
+    margin: 0 auto;
+}
+
+.ingen-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.ingen-item1 {
+    margin-right: 10px; 
+    justify-content: flex-start;
+    width: 250px;
+}
+
+.ingen-item-2 {
+    margin-right: 10px;
+    justify-content: flex-start;
+    width: 600px;
+    margin-left: 70px;
+}
+
+p.ingen-text, p.henry-wu {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+p.ingen-text {
+    margin: 0 10px 100px 0;
+}
+
+img.henry-wu-img {
+    float: left;
+    margin-right: 30px;
+    clear: both;
+}
+
+p.henry-wu {
+    margin-left: 0px;
+    overflow: auto;
+    display: block;
+    margin-bottom: 100px;
+}
+
+p.intro {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    padding: 0 50px 100px
+}
+
+.jumbotron {
+    min-height: 400px;
+    background-image: url(/images/Jurassicvault_JW_4kHD_004.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    display: flex;
+    margin: 5px -30px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.jumbo-text {
+    font-size: 5em;
+    font-style: italic;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    color: var(--danger-color);
+    align-items: center;
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--black)
+    font-family: 'Proxima Nova';
+}
+
+.logo_image__link {
+    margin-right: auto;
+}
+
+.nav__link {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 25px auto;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.malcolm-text {
+    margin: 0;
+    font-size: 2em;
+}
+
+.plan-your-visit-button {
+    background-color: var(--link-color);
+    color: var(--white);
+    font-size: 20px;
+    padding: 10px 24px;
+    border-radius: 20px;
+    border-color: var(--white);
+    transition-duration: 0.8s;
+}
+
+.plan-your-visit-button:hover {
+    background-color: var(--danger-color);
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.footer {
+    color: var(--white);
+    font-size: 1.5em;
+    background-color: var(--primary-color);
+    margin-top: 100px;
+}
+
+.henry-wu {
+list-style: none;
+}
+
+.ingen-text, .henry-wu-text {
+    text-align: left;
+    padding: 20px;
+    }
+
+
+/* For cell phones and tablets below */
+@media  and {max-width: 1100px) {
+    img_dino__card {
+        margin: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: none;
+    }
+
+    nav > a.nav__logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav__link, .nav__link--active {
+        text-decoration: underline;
+        color: #ff7a8f;
+    }
+
+    .nav__link--active {
+        padding: 0;
+    }
+
+    .ingen-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ingen-logo-text-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+@media (min-width: 1100px) {
+    .ingen-logo-text-container {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .ingen-item1 {
+        display: none;
+        margin: 0;
+    }
+
+    .ingen-item2 {
+        display: none;
+        margin: 0;
+    }
+
+    main > .henry-wu-img {
+        margin: 50px;
+    }
+        
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        float: right;
+        font-size: 1.5em;
+    }
+
+    
+}
