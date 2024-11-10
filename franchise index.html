@@ -4,107 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the complete Jurassic Park franchise, from classic films to modern spin-offs and media adaptations. Dive into movie overviews, series, games, and the legacy of dinosaurs brought back to life!">
-    <title>Jurassic Park - Franchise Expansion</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jurassic Park - Franchise History</title>
+    <link rel="stylesheet" href="franchise styles.css">
 </head>
-<body>
+<body class="body">
 
     <!-- Header Section -->
-    <header>
-        <div class="logo">Jurassic Park</div>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="cast.html">Cast</a>
-            <a href="franchise.html">Franchise Expansion</a>
-            <a href="visit.html">Plan Your Visit</a>
-        </nav>
+    <header class="header">
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__content-title">Franchise History</h1>
+                <a href="#overview" class="hero__cta-button">Explore More</a>
+            </div>
+        </section>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Franchise Expansion</h1>
-            <p>A journey through the prehistoric thrills of Jurassic Park and beyond.</p>
-            <a href="#overview" class="cta-button">Explore More</a>
-        </div>
-    </section>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="cast.html" class="nav__link">Cast</a></li>
+            <li class="nav__item"><a href="franchise index.html" class="nav__link">Franchise History</a></li>
+            <li class="nav__item"><a href="visit.html" class="nav__link">Plan Your Visit</a></li>
+        </ul>
+    </nav>
 
-    <!-- Franchise Overview Section -->
-    <section id="overview" class="section">
-        <h2>The World of Jurassic Park</h2>
-        <div class="overview-content">
-            <img src="franchise images/header.png" alt="Jurassic Park Overview">
-            <p>The Jurassic Park franchise began with Michael Crichton's bestselling novel in 1990, which quickly caught the attention of director Steven Spielberg. In 1993, the world was introduced to Jurassic Park, a theme park where dinosaurs roam once again. The films success sparked a series of sequels, bringing audiences closer to dinosaurs with every installment. The franchise has since expanded into multiple films, animated series, and video games, becoming a cultural phenomenon that has captivated fans of all ages. The iconic dinosaurs, thrilling adventures, and groundbreaking effects have cemented Jurassic Park's place in cinema history.</p>
-        </div>
-    </section>
+    <main class="main">
+        <!-- Franchise Overview Section -->
+        <section id="overview" class="section">
+            <h2 class="section__title-primary">The World of Jurassic Park</h2>
+            <div class="section__overview-content">
+                <img src="franchise images/header.png" alt="Jurassic Park Overview"  width="600" height="125" class="section__overview-content-image">
+                <p>The Jurassic Park franchise began with Michael Crichton's bestselling novel in 1990, which quickly caught the attention of director Steven Spielberg. In 1993, the world was introduced to Jurassic Park, a theme park where dinosaurs roam once again. The films success sparked a series of sequels, bringing audiences closer to dinosaurs with every installment. The franchise has since expanded into multiple films, animated series, and video games, becoming a cultural phenomenon that has captivated fans of all ages. The iconic dinosaurs, thrilling adventures, and groundbreaking effects have cemented Jurassic Park's place in cinema history.</p>
+            </div>
+        </section>
 
-    <!-- Main Movies Section -->
-    <section class="section">
-        <h2>Main Franchise Movies</h2>
-        <div class="movie-grid">
-            <div class="movie-item">
-                <img src="franchise images/jurassic park.jpg" alt="Jurassic Park" width="600" height="125">
-                <h3>Jurassic Park</h3>
-                <p>The original film that started it all! Jurassic Park takes us to Isla Nublar, where scientists have resurrected dinosaurs and created a theme park. But when the parks security system fails, visitors are plunged into a terrifying struggle for survival. Directed by Steven Spielberg, this film introduced audiences to iconic dinosaurs like the T-Rex and Velociraptors.</p>
+        <!-- Main Movies Section -->
+        <section class="section">
+            <h2 class="section__title-primary">Main Franchise Movies</h2>
+            <div class="grid grid--movies">
+                <div class="grid__item--movie">
+                    <img src="franchise images/jurassic park.jpg" alt="Jurassic Park" width="600" height="125" class="grid__item-image--movie">
+                    <h3 class="section__title-secondary">Jurassic Park</h3>
+                    <p>The original film that started it all! Jurassic Park takes us to Isla Nublar, where scientists have resurrected dinosaurs and created a theme park. But when the park's security system fails, visitors are plunged into a terrifying struggle for survival. Directed by Steven Spielberg, this film introduced audiences to iconic dinosaurs like the T-Rex and Velociraptors.</p>
+                </div>
+                <div class="grid__item--movie">
+                    <img src="franchise images/lost world.jpg" alt="The Lost World" class="grid__item-image--movie">
+                    <h3 class="section__title-secondary">The Lost World: Jurassic Park</h3>
+                    <p>In the thrilling sequel, we return to a different island where dinosaurs roam freely. Dr. Ian Malcolm (Jeff Goldblum) and a team venture to Isla Sorna, only to find that nature has taken over. With more action and new species of dinosaurs, this movie explores the dangers of unchecked scientific ambition.</p>
+                </div>
+                <div class="grid__item--movie">
+                    <img src="franchise images/jurassicparkbuilding.jpg" alt="Jurassic Park III" width="100" height="125" class="grid__item-image--movie">
+                    <h3 class="section__title-secondary">Jurassic Park III</h3>
+                    <p>Dr. Alan Grant (Sam Neill) is lured back to Isla Sorna under false pretenses in this action-packed installment. A rescue mission goes wrong, leading to encounters with deadly new dinosaurs, including the massive Spinosaurus. This film takes a survival-focused approach, highlighting the unpredictability of these ancient creatures.</p>
+                </div>
+                <div class="grid__item--movie">
+                    <img src="franchise images/jurassicworld2.jpg" alt="Jurassic World" width="400" height="125" class="grid__item-image--movie">
+                    <h3 class="section__title-secondary">Jurassic World</h3>
+                    <p>In a modernized park built on the original site, visitors are thrilled by genetically engineered dinosaurs until an experimental hybrid, the Indominus Rex, escapes. Jurassic World brings new thrills and challenges the ethics of genetic manipulation, with Owen Grady (Chris Pratt) and Claire Dearing (Bryce Dallas Howard) at the helm.</p>
+                </div>
             </div>
-            <div class="movie-item">
-                <img src="franchise images/lost world.jpg" alt="The Lost World" width="600" height="125">
-                <h3>The Lost World: Jurassic Park</h3>
-                <p>In the thrilling sequel, we return to a different island where dinosaurs roam freely. Dr. Ian Malcolm (Jeff Goldblum) and a team venture to Isla Sorna, only to find that nature has taken over. With more action and new species of dinosaurs, this movie explores the dangers of unchecked scientific ambition.</p>
-            </div>
-            <div class="movie-item">
-                <img src="franchise images/jurassicparkbuilding.jpg" alt="Jurassic Park III" width="100" height="125">
-                <h3>Jurassic Park III</h3>
-                <p>Dr. Alan Grant (Sam Neill) is lured back to Isla Sorna under false pretenses in this action-packed installment. A rescue mission goes wrong, leading to encounters with deadly new dinosaurs, including the massive Spinosaurus. This film takes a survival-focused approach, highlighting the unpredictability of these ancient creatures.</p>
-            </div>
-            <div class="movie-item">
-                <img src="franchise images/jurassicworld2.jpg" alt="Jurassic World" width="400" height="125">
-                <h3>Jurassic World</h3>
-                <p>In a modernized park built on the original site, visitors are thrilled by genetically engineered dinosaurs until an experimental hybrid, the Indominus Rex, escapes. Jurassic World brings new thrills and challenges the ethics of genetic manipulation, with Owen Grady (Chris Pratt) and Claire Dearing (Bryce Dallas Howard) at the helm.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Spinoff Series Section -->
-    <section class="section">
-        <h2>Spinoffs & Extended Universe</h2>
-        <div class="spinoff-grid">
-            <div class="spinoff-item">
-                <img src="franchise images/camp.jpg" alt="Camp Cretaceous">
-                <h3>Jurassic World: Camp Cretaceous</h3>
-                <p>This animated series follows a group of teens attending a camp on Isla Nublar, who must survive on their own when the dinosaurs break loose. Camp Cretaceous explores new stories in the Jurassic World universe and brings fresh perspectives on the dinosaurs we know and love.</p>
+        <!-- Spinoff Series Section -->
+        <section class="section">
+            <h2 class="section__title-primary">Spinoffs & Extended Universe</h2>
+            <div class="grid grid--spinoffs">
+                <div class="grid__item--spinoff">
+                    <img src="franchise images/camp.jpg" alt="Camp Cretaceous" class="grid__item-image--spinoff">
+                    <h3 class="section__title-secondary">Jurassic World: Camp Cretaceous</h3>
+                    <p>This animated series follows a group of teens attending a camp on Isla Nublar, who must survive on their own when the dinosaurs break loose. Camp Cretaceous explores new stories in the Jurassic World universe and brings fresh perspectives on the dinosaurs we know and love.</p>
+                </div>
+                <div class="grid__item--spinoff">
+                    <img src="franchise images/dinosaurs.jpg" alt="Other Spinoff" class="grid__item-image--spinoff">
+                    <h3 class="section__title-secondary">Other Spinoffs</h3>
+                    <p>Additional projects in development aim to expand the Jurassic universe, with more thrilling encounters and perspectives that allow fans to experience new sides of this prehistoric world.</p>
+                </div>
             </div>
-            <div class="spinoff-item">
-                <img src="franchise images/dinosaurs.jpg" alt="Other Spinoff">
-                <h3>Other Spinoffs</h3>
-                <p>Additional projects in development aim to expand the Jurassic universe, with more thrilling encounters and perspectives that allow fans to experience new sides of this prehistoric world.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Other Media Section -->
-    <section class="section">
-        <h2>Books, Games, & Beyond</h2>
-        <div class="media-grid">
-            <div class="media-item">
-                <img src="franchise images/book.jpg" alt="Jurassic Park Novel" width="100" height="170">
-                <h3>Jurassic Park Novel by Michael Crichton</h3>
-                <p>The novel that inspired it all! Michael Crichton's Jurassic Park dives deeper into the science and ethical dilemmas of cloning dinosaurs. The book remains a must-read for fans of the franchise, with its suspenseful storytelling and complex characters.</p>
+        <!-- Other Media Section -->
+        <section class="section">
+            <h2 class="section__title-primary">Books, Games, & Beyond</h2>
+            <div class="grid grid--media">
+                <div class="grid__item--media">
+                    <img src="franchise images/book.jpg" alt="Jurassic Park Novel" width="100" height="170" class="grid__item-image--media">
+                    <h3 class="section__title-secondary">Jurassic Park Novel by Michael Crichton</h3>
+                    <p>The novel that inspired it all! Michael Crichton's Jurassic Park dives deeper into the science and ethical dilemmas of cloning dinosaurs. The book remains a must-read for fans of the franchise, with its suspenseful storytelling and complex characters.</p>
+                </div>
+                <div class="grid__item--media">
+                    <img src="franchise images/game.jpg" alt="Jurassic World Game" width="800" height="170" class="grid__item-image--media">
+                    <h3 class="section__title-secondary">Jurassic World Evolution (Video Game)</h3>
+                    <p>Take control and build your own dinosaur park! Jurassic World Evolution allows players to manage and maintain their own Jurassic World, making critical decisions about dinosaur genetics, park layout, and safety. This game brings the excitement of running a dinosaur theme park to life.</p>
+                </div>
             </div>
-            <div class="media-item">
-                <img src="franchise images/game.jpg" alt="Jurassic World Game" width="800" height="170">
-                <h3>Jurassic World Evolution (Video Game)</h3>
-                <p>Take control and build your own dinosaur park! Jurassic World Evolution allows players to manage and maintain their own Jurassic World, making critical decisions about dinosaur genetics, park layout, and safety. This game brings the excitement of running a dinosaur theme park to life.</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer Section -->
-    <footer>
-        <p>Copyright © 2024 Jurassic Park</p>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-        </div>
+    <footer class="footer">
+        <p>Copyright © 2024 Jurassic Park. All rights reserved.</p>
     </footer>
 
 </body>
