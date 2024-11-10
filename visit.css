@@ -36,10 +36,14 @@ header {
 }
 
 footer {
-    color: black;
-    padding: 20px;
-    text-align: center;
-  }
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
   
   .footer-links a {
     color: var(--link-color); 
@@ -56,11 +60,13 @@ body {
 h1 {
     font-family: 'Proxima Nova Extrabold';
     color: var(--header1-color);
+
   }
   
 h2{
     font-family: 'Proxima Nova Extrabold';
     color: var(--header2-color);
+    padding: 20px;
 }
 
 h3{
@@ -176,7 +182,7 @@ div.gallery {
   }
   
   div.desc {
-    padding: 15px;
+    padding: 25px;
     text-align: center;
   }
 
