@@ -177,10 +177,8 @@ nav a {
     font-size: 14px;
     font-weight: 800;
     color: var(--link-color);
-}
+    text-decoration: none;
 
-.nav__link:hover {
-    text-decoration: underline;
 }
 
 /* Mobile and tablet responsiveness */
