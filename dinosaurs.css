@@ -14,19 +14,19 @@
     --background-color: #f4f4f4;
     --white: #ffffff; /* Added missing --white variable */
 }
- 
+
 h1 {
     font-size: 50px;
     color: var(--header1-color);
     text-transform: uppercase;
 }
- 
+
 h2 {
     font-size: 45px;
     color: var(--header2-color);
     text-transform: uppercase;
 }
- 
+
 .header {
     text-align: center;
     justify-content: space-between;
@@ -34,21 +34,21 @@ h2 {
     background-color: var(--header-bg-color);
     color: var(--footer-text-color);
 }
- 
+
 body {
     font-family: 'Proxima Nova';
     font-size: 12px;
     background-color: var(--background-color);
     color: var(--body-text-color);
 }
- 
+
 header, footer {
     text-align: center;
     background-color: var(--white); /* Fixed undefined variable */
     font-family: 'Proxima Nova';
     color: var(--white); /* Fixed undefined variable */
 }
- 
+
 .img_dino__container {
     display: flex;
     flex-direction: row;
@@ -57,7 +57,7 @@ header, footer {
     position: relative;
     text-align: center;
 }
- 
+
 .dino_name {
     font-size: 2em;
     text-transform: uppercase;
@@ -65,60 +65,63 @@ header, footer {
     margin-bottom: 50px;
     font-weight: bold;
 }
- 
+
 .img_dino__card {
     margin: 0 auto;
 }
- 
+
+/* Ensures the ingen-container displays the image properly */
 .ingen-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 200px;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    margin-top: 100px;
 }
- 
+
 .ingen-item1 {
-    margin-right: 10px;
+    display: block;
     justify-content: flex-start;
     width: 250px;
 }
- 
+
 .ingen-item-2 { 
-    margin-right: 10px;
     justify-content: flex-start;
     width: 600px;
     margin-left: 70px;
 }
- 
+
 p.ingen-text, p.henry-wu {
     font-size: 1.5em;
     text-align: left;
 }
- 
+
 p.ingen-text {
     margin: 0 10px 100px 0;
 }
- 
+
 img.henry-wu-img {
-    float: none;
-    margin-right: 30px;
-    clear: both;
+    display: block;
+    margin: 50px auto; /* Centers the image */
+    max-width: 80%; /* Adjust as needed */
+    height: auto;
 }
- 
+
 p.henry-wu {
     margin-left: 0px;
     overflow: auto;
     display: block;
     margin-bottom: 100px;
+    text-align: center; /* Centers the text below the image */
 }
- 
+
 p.intro {
     font-size: 1.5em;
     margin-bottom: 50px;
     padding: 0 50px 100px;
 }
- 
+
 .jumbotron {
     min-height: 400px;
     background-image: url(/images/Jurassicvault_JW_4kHD_004.jpg);
@@ -133,54 +136,87 @@ p.intro {
     flex-direction: column;
     justify-content: space-evenly;
 }
- 
+
 .jumbo-text {
     font-size: 5em;
     font-style: italic;
     margin: 0;
 }
- 
+
+nav {
+    width: 100%; /* Ensure the navbar spans the entire width */
+    background-color: #222;
+    text-align: center;
+    position: sticky; /* Makes the nav sticky at the top */
+    top: 0;
+    z-index: 1000;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
-    background-color: #222;
-    text-align: center;
     margin: 0;
-    align-items: center;
+    display: flex;
+    justify-content: center; /* Centers nav items */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
- 
+
 nav li {
     display: inline;
 }
- 
+
 nav a {
-    color: var(--black);
+    color: var(--white);
     font-family: 'Proxima Nova';
-}
- 
-.logo_image__link {
-    margin-right: auto;
-}
- 
-.nav__link {
-    font-size: 14px;
-    font-weight: 800;
-    color: var(--link-color);
     text-decoration: none;
     padding: 15px 20px;
     display: inline-block;
 }
- 
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--link-color);
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stacks the nav items vertically */
+        text-align: center; /* Centers the items */
+    }
+
+    nav a {
+        padding: 10px 0; /* Adjust padding for better appearance */
+        width: 100%; /* Makes each link take full width */
+    }
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 15px 20px;
+    }
+}
+
 main {
     padding: 20px;
     text-align: center;
 }
- 
+
 .malcolm-text {
     margin: 0;
     font-size: 2em;
 }
- 
+
 .plan-your-visit-button {
     background-color: var(--link-color);
     color: var(--white);
@@ -190,13 +226,13 @@ main {
     border-color: var(--white);
     transition-duration: 0.8s;
 }
- 
+
 .plan-your-visit-button:hover {
     background-color: var(--link-color);
     color: var(--footer-text-color);
     border-color: var(--footer-text-color);
 }
- 
+
 .footer {
     color: var(--footer-text-color);
     font-size: 1.5em;
@@ -204,49 +240,49 @@ main {
     margin-top: 100px;
     padding: 20px;
 }
- 
+
 .henry-wu {
     list-style: none;
 }
- 
+
 .ingen-text, .henry-wu-text {
     text-align: left;
     padding: 20px;
 }
- 
+
 /* For cell phones and tablets below */
-@media (max-width: 1100px) { /* Fixed missing parenthesis */
+@media (min-width: 1100px) { 
     .img_dino__card {
         margin: 20px;
     }
- 
+
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         float: none;
     }
- 
+
     nav > a.nav__logo {
         margin-right: 0;
         margin-bottom: 10px;
     }
- 
+
     .nav__link, .nav__link--active {
         text-decoration: underline;
         color: #ff7a8f;
     }
- 
+
     .nav__link--active {
         padding: 0;
     }
- 
+
     .ingen-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
- 
+
     .ingen-logo-text-container {
         display: flex;
         flex-wrap: wrap;
@@ -254,24 +290,24 @@ main {
         justify-content: center;
     }
 }
- 
-@media (min-width: 1100px) {
+
+@media (max-width: 1100px) {
     .ingen-logo-text-container {
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: flex-start;
     }
- 
+
     .ingen-item1 {
         display: none;
         margin: 0;
     }
- 
+
     .ingen-item2 {
         display: none;
         margin: 0;
     }
- 
+
     main > .henry-wu-img {
         margin: 50px;
     }
