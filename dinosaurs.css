@@ -12,7 +12,7 @@
     --header-bg-color: #333;
     --footer-text-color: #ffffff;
     --background-color: #f4f4f4;
-    --white: #ffffff; /* Added missing --white variable */
+    --white: #ffffff; 
 }
 
 h1 {
@@ -44,11 +44,10 @@ body {
 
 header, footer {
     text-align: center;
-    background-color: var(--white); /* Fixed undefined variable */
+    background-color: var(--white); 
     font-family: 'Proxima Nova';
-    color: var(--white); /* Fixed undefined variable */
+    color: var(--white); 
 }
-
 .img_dino__container {
     display: flex;
     flex-direction: row;
@@ -70,13 +69,12 @@ header, footer {
     margin: 0 auto;
 }
 
-/* Ensures the ingen-container displays the image properly */
 .ingen-container {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    flex-wrap: wrap; /* Allows wrapping on small screens */
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
     margin-top: 100px;
 }
 
@@ -103,8 +101,8 @@ p.ingen-text {
 
 img.henry-wu-img {
     display: block;
-    margin: 50px auto; /* Centers the image */
-    max-width: 80%; /* Adjust as needed */
+    margin: 50px auto; 
+    max-width: 80%; 
     height: auto;
 }
 
@@ -113,7 +111,7 @@ p.henry-wu {
     overflow: auto;
     display: block;
     margin-bottom: 100px;
-    text-align: center; /* Centers the text below the image */
+    text-align: center; 
 }
 
 p.intro {
@@ -144,10 +142,10 @@ p.intro {
 }
 
 nav {
-    width: 100%; /* Ensure the navbar spans the entire width */
+    width: 100%; 
     background-color: #222;
     text-align: center;
-    position: sticky; /* Makes the nav sticky at the top */
+    position: sticky; 
     top: 0;
     z-index: 1000;
 }
@@ -157,8 +155,8 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centers nav items */
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: center; 
+    flex-wrap: wrap; 
 }
 
 nav li {
@@ -181,20 +179,19 @@ nav a {
 
 }
 
-/* Mobile and tablet responsiveness */
+
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Stacks the nav items vertically */
-        text-align: center; /* Centers the items */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     nav a {
-        padding: 10px 0; /* Adjust padding for better appearance */
-        width: 100%; /* Makes each link take full width */
+        padding: 10px 0; 
+        width: 100%; 
     }
 }
 
-/* Larger screens */
 @media (min-width: 768px) {
     nav ul {
         justify-content: center;
@@ -248,7 +245,6 @@ main {
     padding: 20px;
 }
 
-/* For cell phones and tablets below */
 @media (min-width: 1100px) { 
     .img_dino__card {
         margin: 20px;

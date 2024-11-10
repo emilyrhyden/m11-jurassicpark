@@ -46,8 +46,8 @@ nav ul li {
 
 nav ul li a {
     font-size: 14px;
-    font-weight: 800; /* Extrabold */
-    color: #ff7a8f; /* Inline link color */
+    font-weight: 800;
+    color: #ff7a8f; 
     text-decoration: none;
     padding: 15px 20px;
     display: inline-block;
@@ -60,25 +60,25 @@ main section {
 
 .button {
     display: inline-block;
-    padding: 12px 24px; /* Slightly larger padding for better touch target size */
-    margin: 20px 0; /* More space around the button for clarity */
-    background-color: #ff7a8f; /* The specified inline link color */
-    color: white; /* Contrast color for readability */
+    padding: 12px 24px; 
+    margin: 20px 0; 
+    background-color: #ff7a8f; 
+    color: white; 
     text-align: center;
     text-decoration: none;
-    font-family: 'Proxima Nova Extrabold', sans-serif; /* Maintaining font consistency */
-    font-size: 14px; /* Same as inline link size */
-    border: none; /* No border unless desired */
-    border-radius: 4px; /* Soften the edges slightly */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
-    cursor: pointer; /* Cursor indicates clickable item */
+    font-family: 'Proxima Nova Extrabold', sans-serif; 
+    font-size: 14px; 
+    border: none; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, transform 0.3s; 
+    cursor: pointer; 
 }
 
 .button:hover, .button:focus {
-    background-color: #e06676; /* A darker shade for hover */
-    transform: scale(1.05); /* Slightly enlarge on hover/focus for effect */
-    color: #ffffff; /* Ensures text color remains the same */
-    outline: none; /* Removes outline unless accessibility concerns dictate otherwise */
+    background-color: #e06676; 
+    transform: scale(1.05); 
+    color: #ffffff; 
+    outline: none; 
 }
 
 footer {
